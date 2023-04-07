@@ -13,50 +13,145 @@
 </head>
 
 <body>
+<!-- header-->
     <header class=""> 
-        <picture class="">
-            <a href="./index.html">
-                <img src="./image/branding/logo_light_horizontal.svg" alt="Branding logo">
-            </a>
-        </picture>
         <nav class="">
+<!-- logo de header -->
+            <picture class="">
+                <a href="./index.html">
+                    <img src="./image/branding/logo_light_horizontal.svg" alt="Branding logo">
+                </a>
+            </picture>
+<!-- barra de navegacion-->
             <ul class="">
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href=""><img src="./image/icons/cart-icon.svg" alt=""></a></li>
+                <li>
+                    <a href="./shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+                <li>
+                    <a href="./cart"><img src="./image/icons/cart-icon.svg" alt="logo carro"></a>
+                </li>
             </ul>
         </nav>
     </header>
-
+<!-- main -->
+    <main>
+<!-- banner -->
     <section class="banner">
             <article>
                 <h2>Nuevos Ingresos</h2>
                 <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <button>SHOP</button>
+                <a href="./shop.html">SHOP</a>
             </article>
     </section>
+<!-- seccion principal de articulos -->
+    <section>
+        <article>
+            <h3>Star Wars & The Mandalorian</h3>
+            <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
+            <a href="">VER COLECCIÓN</a>
+        </article>
+        <picture>
+            <img src="./image/star-wars/baby-yoda-1.webp" alt="">
+        </picture>
+    <section>
+        <article>
+            <h3>POKEMON INDIGO</h3>
+            <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+            <a href="">VER COLECCION</a>
+        </article>
+        <picture>
+            <img src="./image/pokemon/vulpix-1.webp" alt="">
+        </picture>       
+    </section>    
+    <section>
+        <article>
+            <h3>HARRY POTTER</h3>
+            <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+            <a href="">VER COLECCION</a>
+        </article>
+        <picture>
+            <img src="./image/harry-potter/snape-patronus-1.webp" alt="">
+        </picture>       
+    </section>  
+<!-- carrusel de novedades -->
+        <section class="main--container">
+            <h2>ÚLTIMOS LANZAMIENTOS</h2>
+            <ul class="container--carrusel">
+                <li>
+                    <article>
+                        <a href="./item.html">
+                            <picture>
+                                <img src="./image/star-wars/trooper-1.webp" class="mini" alt="">
+                            </picture>
+                            <div>
+                                <p>STAR WARS</p>
+                                <h4>STORMTROOPER</h4>
+                                <p>$ 1799,99.-</p>
+                                <p>3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="./item.html">
+                            <picture>
+                                <img src="./image/pokemon/pidgeotto-1.webp" class="mini" alt="">
+                            </picture>
+                            <div>
+                                <p>POKEMON</p>
+                                <h4>PIDGEOTTO</h4>
+                                <p>$ 1799,99.-</p>
+                                <p>3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="./item.html">
+                            <picture>
+                                <img src="./image/harry-potter/luna-1.webp" class="mini" alt="">
+                            </picture>
+                            <div>
+                                <p>HARRY POTTER</p>
+                                <h4>PATRONUS SNAPE</h4>
+                                <p>$ 1799,99.-</p>
+                                <p>3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main> 
 
-
-
-
-
-
+<!--footer-->
     <footer>
+<!-- barra de navegacion del footer-->
         <nav class="">
             <ul class="">
                 <li><a href="./shop.html">Shop</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Login</a></li>
+                <li><a href="./admin/register.html">Contacto</a></li>
+                <li><a href="./admin/login.html">Login</a></li>
                 <li><a href=""><img src="./image/icons/cart-icon.svg" alt=""></a></li>
             </ul>
+<!-- iso del footer-->
+            <picture>
+                <a href="./index.html">
+                    <img src="./image/branding/isotype.svg" alt="">
+                </a>
+            </picture>
         </nav>
-
-        <picture>
-            <a href="./index.html">
-                <img src="./image/branding/isotype.svg" alt="">
-            </a>
-        </picture>
+<!-- copyrights -->
+        <p class="">All rights reserved 2023 - Funkoshop <sup>&copy</sup></p> 
+        <p style="font-family: fantasy;" class="">by C#rist Monty </p>
     </footer>
 
 <!-- script JS -->
