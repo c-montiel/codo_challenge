@@ -68,4 +68,8 @@ footer {
 
 .banner {
     background-image: url(../image/funkos-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
