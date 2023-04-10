@@ -1,7 +1,7 @@
-/* fonts imported from google fonts */
+/* imported from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Raleway:wght@300;500;800&display=swap');
 
-/*Variables*/
+/* Variables */
 :root {
     /* color pallette*/
     --primary-solid: #f33;
@@ -39,7 +39,9 @@
     --space-128: 12.8rem;
     --space-68: 6.8rem;
     --space-36: 3.6rem;
-    --space-28: 2.4rem;
+    --space-28: 2.8rem;
+    --space-24: 2.4rem;
+    --space-20: 2.0rem;
     --space-16: 1.6rem;
     --space-8: .8rem;
 }
@@ -54,16 +56,38 @@
 }
 
 html {
+    font-size: 62.5%;
     color: var(--dark-solid);
     font-family: var(--primary-font);
-    font-size: 62.5%;
-    font-size: var(--font-xsmall);
 }
 
 header,
 footer {
-    background-color: var(--dark-bg-solid);
+    padding: var(--space-36);
     display: flex;
+    background-color: var(--dark-bg-solid);
+    color: var(--light-bg-solid);
+    font-family: var(--secondary-font);
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: var(--font-medium);
+    color: inherit
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 .banner {
@@ -72,4 +96,59 @@ footer {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: var(--space-20)
+}
+
+.navbar__link {
+    display: inline-block;
+    font-size: var(--font-medium);
+    padding: var(--space-8) var(--space-16);
+    transition: background 0.2s ease-in-out;
+    position: relative;
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
+}
+
+.with__icon{
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.with__submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    width: 250px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+}
+
+.submenu__item {
+    display: block;
+    padding: var(--space-8) var(--space-16);
+    font-size: inherit;
+    transition: background 0.4s ease-in-out;
+}
+
+.submenu__item:hover {
+    background-color: var(--primary-900);
 }
