@@ -90,6 +90,7 @@ img {
     margin: auto;
 }
 
+/* banner */
 .banner {
     background-image: url(../image/funkos-banner.webp);
     background-repeat: no-repeat;
@@ -141,12 +142,14 @@ img {
     padding: var(--space-8) var(--space-68);
     border-radius: 50px;
 }
- .banner__link:hover {
+
+.banner__link:hover {
     background-color:var(--primary-900);
     color: var(--light-bg-solid);
     transition: all 0.3s ease-in-out;
- }
+}
 
+/* navigation bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -186,9 +189,10 @@ img {
 
 .submenu {
     display: none;
-    width: 250px;
+    width: 300px;
     position: absolute;
     background-color: var(--dark-bg-solid);
+    z-index: 2;
 }
 
 .submenu__item {
@@ -200,4 +204,54 @@ img {
 
 .submenu__item:hover {
     background-color: var(--primary-900);
+}
+
+/* coleccion */
+.colection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    align-items: center;
+}
+
+.colection:nth-child(2) .colection__pict {
+    order: -1;
+}
+
+.colection__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+    align-items: start;
+}
+
+.colection__title {
+    font-family: var(--secondary-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+}
+
+.colection__text {
+    font-family: var(--secondary-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--space-20);
+}
+
+.colection__link {
+    display: inline-block;
+    font-size: var(--font-medium);
+    font-weight: 500;
+    background-color: var(--dark-bg-solid);
+    color: var(--light-bg-solid);
+    padding: var(--space-16) var(--space-36);
+    border-radius: 50px;
+}
+
+.colection__link:hover {
+    background-color: var(--primary-solid);
+    color: var(--light-bg-solid);
+    text-decoration: none;
+    transition: all 0.4 ease-in-out;
 }
