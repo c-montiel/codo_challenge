@@ -13,7 +13,7 @@
 
 <body>
 <!-- header-->
-    <header class=""> 
+    <header class="header"> 
         <nav class="navbar container" >
 <!-- logo de header -->
             <picture class=" navbar__logo">
@@ -93,6 +93,7 @@
                     <article class="card__item">
                         <a href="./item.html" class="card__link">
                             <picture class="card__pict">
+                                <span class="card__tag">Nuevo!</span>
                                 <img src="./image/star-wars/trooper-1.webp" class="card__pict--front" alt="figura trooper">
                                 <img src="./image/star-wars/trooper-box.webp" class="card__pict--back" alt="figura trooper">
                             </picture>
@@ -109,6 +110,7 @@
                     <article class="card__item">
                         <a href="./item.html" class="card__link">
                             <picture class="card__pict">
+                                <span class="card__tag">Nuevo!</span>
                                 <img src="./image/pokemon/pidgeotto-1.webp" class="card__pict--front" alt="figura pidgeotto">
                                 <img src="./image/pokemon/pidgeotto-box.webp" class="card__pict--back" alt="figura pidgeotto">
                             </picture>
@@ -125,6 +127,7 @@
                     <article class="card__item">
                         <a href="./item.html" class="card__link">
                             <picture class="card__pict">
+                                <span class="card__tag">Nuevo!</span>
                                 <img src="./image/harry-potter/luna-1.webp" class="card__pict--front" alt="figura luna">
                                 <img src="./image/harry-potter/luna-box.webp" class="card__pict--back" alt="figura luna">
                             </picture>
@@ -142,14 +145,14 @@
     </main> 
 
 <!--footer-->
-    <footer>
+    <footer class="footer">
 <!-- barra de navegacion del footer-->
-        <nav class="navbar__container">
-            <ul class="">
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href="./admin/register.html">Registrarse</a></li>
-                <li><a href="./admin/login.html">Login</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
+        <nav class="container navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="./shop.html">Shop</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./admin/register.html">Registrarse</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./admin/login.html">Login</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./contact.html">Contacto</a></li>
             </ul>
 <!-- iso del footer-->
             <picture class="navbar__logo">
@@ -161,7 +164,7 @@
 <!-- copyrights -->
         <p class="copyright">All rights reserved 2023 - Funkoshop <sup>&copy</sup></p> 
         <p style="font-family: fantasy;" class="autor">by C#rist Monty </p>
-    </footer>o
+    </footer>
 <!-- script JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
