@@ -76,11 +76,12 @@ header,
 footer {
     padding: var(--space-36);
     display: flex;
+    width: 100%;
     background-color: var(--dark-bg-solid);
     color: var(--light-bg-solid);
     font-family: var(--secondary-font);
     align-items: center;
-
+    position: relative;
 }
 
 a {
@@ -165,12 +166,17 @@ img {
 /* navigation bar */
 .navbar {
     display: flex;
+    width: 100%;
+    position: relative;
     justify-content: space-between;
     align-items: center;
+    gap: var(--space-128);
 }
 
 .navbar__logo {
+    display: inline-block;
     max-width: 300px;
+    left: 3rem;
 }
 
 .navbar__menu {
@@ -356,19 +362,25 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    justify-items: stretch;
+    align-items: center;
+    padding: var(--space-24) var(--space-36);
 }
 
 .footer__navbar {
     display: flex;
     justify-content: space-between;    
+    align-items: center;
+    margin-bottom: var(--space-36);
 }
 
 footer .navbar__logo {
-    max-width: 100px;
+    max-width: 200px;
+    margin-bottom: var(--space-36);
 
 }
 
 .footer p {
+    font-size: var(--font-xsmall);
     text-align: center;
+    margin-top: auto;
 }
