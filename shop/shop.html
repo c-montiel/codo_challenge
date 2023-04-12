@@ -13,59 +13,65 @@
 </head>
 
 <body>
-    <!-- header-->
-        <header class=""> 
-            <nav class="navbar container" >
-    <!-- logo de header -->
-                <picture class="navbar__logo">
-                    <a href="./index.html">
-                        <img src="./image/branding/logo_light_horizontal.svg" alt="Branding logo">
-                    </a>
-                </picture>
-    <!-- barra de navegacion-->
-                <ul class="navbar__menu">
-                    <li>
-                        <a href="./shop.html">Shop</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="./admin/login.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="./cart"><img src="./image/icons/cart-icon.svg" alt="logo carro"></a>
-                    </li>
+<!-- header-->
+<header class="header"> 
+    <nav class="navbar container" >
+<!-- logo de header -->
+        <picture class=" navbar__logo">
+            <a href="../index.html">
+                <img src="../image/branding/logo_light_horizontal.svg" alt="Branding logo">
+            </a>
+        </picture>
+<!-- barra de navegacion-->
+        <ul class="navbar__menu">
+            <li class="navbar__item with__submenu">
+                <a href="../shop/shop.html" class="navbar__link with__icon">Shop <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                    <li class="submenu__item"><a href="">Funkos</a></li>
+                    <li class="submenu__item"><a href="">Remeras</a></li>
+                    <li class="submenu__item"><a href="">Llaveros</a></li>
                 </ul>
-            </nav>
-        </header>
+            </li>
+            <li class="navbar__item">
+                <a href="../shop/contact.html" class="navbar__link">Contacto</a>
+            </li>
+            <li >
+            <li  class="navbar__item">
+                <a href="../admin/login.html" class="navbar__link">Login</a>
+            </li>
+            <li class="navbar__item">
+                <a href="./cart"><img src="./image/icons/cart-icon.svg" alt="logo carro"></a>
+            </li>
+        </ul>
+    </nav>
+</header>
     
     
-
+<p>aqui va el shop</p>
 
 <!--footer-->
-<footer>
+<footer class="footer">
     <!-- barra de navegacion del footer-->
-            <nav class="navbar">
-                <ul class="navbar__menu">
-                    <li><a href="./shop.html">Shop</a></li>
-                    <li><a href="./admin/register.html">Registrarse</a></li>
-                    <li><a href="./admin/login.html">Login</a></li>
-                    <li><a href="./contact.html">Contacto</a></li>
+            <nav class="container navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a class="navbar__link" href="./shop.html">Shop</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="./admin/register.html">Registrarse</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="./admin/login.html">Login</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="./contact.html">Contacto</a></li>
                 </ul>
     <!-- iso del footer-->
                 <picture class="navbar__logo">
                     <a href="./index.html">
-                        <img src="./image/branding/isotype.svg" alt="">
+                        <img src="./image/branding/isotype.svg" alt="isotipo">
                     </a>
                 </picture>
             </nav>
     <!-- copyrights -->
-            <p class="">All rights reserved 2023 - Funkoshop <sup>&copy</sup></p> 
-            <p style="font-family: fantasy;" class="">by C#rist Monty </p>
+            <p class="copyright">All rights reserved 2023 - Funkoshop <sup>&copy</sup></p> 
+            <p style="font-family: fantasy;" class="autor">by C#rist Monty </p>
         </footer>
-    
     <!-- script JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     </body>
 </html>
