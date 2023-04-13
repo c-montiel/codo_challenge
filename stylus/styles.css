@@ -382,3 +382,13 @@ footer .navbar__logo {
     text-align: center;
     margin-top: var(--space-8);
 }
+
+/* pagina de Item */
+.item--card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item--card:nth-child(1) .colection__pict {
+    order: -1;
+}
