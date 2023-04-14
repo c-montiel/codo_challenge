@@ -387,6 +387,7 @@ footer .navbar__logo {
 .item--card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    font-size: 180%;
 }
 
 .item--card:nth-child(1) .colection__pict {
