@@ -5,35 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<!-- CSS - Stylesheet -->
+    <link rel="stylesheet" href="../stylus/styles.css">
 </head>
+
 <body>
-    
+
+    <!-- header-->
+<header class="header"> 
+    <nav aria-label="" class="navbar container">
+        <picture class=" navbar__logo"><!-- logo de header -->
+            <a href="../index.html">
+                <img src="../image/branding/logo_light_horizontal.svg" alt="Branding logo">
+            </a>
+        </picture>
+        <ul class="navbar__menu">
+            <li  class="navbar__item">
+                <a href="../index.html" class="navbar__link">salir</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 
-
-    <main>
-        <section>
-            <h1>INGRESAR A MI CUENTA</h1>
-            <form>
+    <main class="container">
+        <section class="login">
+            <h1 class="title__login">INGRESAR A MI CUENTA</h1>
+            <form class="form">
                 <label for="email">Email:</label>
-                <input type="email" valor="">
+                <input type="email" placeholder="email">
                 <br>
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" name="contraseña" valor="">
+                <input type="password" name="contraseña" placeholder="password">
                 <br>
                 <button type="submit" name="ingresar">Ingresar</button>
-                <span>
-                    <input type="checkbox" name="recordarMe" valor="recordarMe">
-                    <label for="">Recuerdame</label>
-                </span>
+                <br>
+                <input type="checkbox" name="recordarMe" value="recordarMe">
+                <label for="recordarMe">Recuerdame</label>
+                
             </form>
             <div>
-                <a href="">Olvide mi contraseña</a>
+                <a href="">Olvidé mi contraseña</a>
             </div>
         </section>
     </main>
 
-
+<!--footer-->
+<footer class="footer">
+    <!-- barra de navegacion del footer-->
+            <nav aria-label="" class="container navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">Shop</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="./register.html">Registrarse</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="./login.html">Login</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="../shop/contact.html">Contacto</a></li>
+                </ul>
+    <!-- iso del footer-->
+                <picture class="navbar__logo">
+                    <a href="../index.html">
+                        <img src="../image/branding/isotype.svg" alt="isotipo">
+                    </a>
+                </picture>
+            </nav>
+    <!-- copyrights -->
+            <p class="copyright">All rights reserved 2023 - Funkoshop <sup>&copy</sup></p> 
+            <p style="font-family: fantasy;" class="autor">by C#rist Monty </p>
+        </footer>
+    
 
 
 

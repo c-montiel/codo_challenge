@@ -8,7 +8,21 @@
 </head>
 <body>
     
-
+<!-- header-->
+<header class="header"> 
+    <nav aria-label="" class="navbar container">
+        <picture class=" navbar__logo"><!-- logo de header -->
+            <a href="../index.html">
+                <img src="../image/branding/logo_light_horizontal.svg" alt="Branding logo">
+            </a>
+        </picture>
+        <ul class="navbar__menu">
+            <li  class="navbar__item">
+                <a href="./admin/login.html" class="navbar__link">salir</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
     <main class="container">
         <h1 class="tittle">CREA TU CUENTA</h1>
@@ -16,28 +30,28 @@
         <form class="form__content">
             <ul class="form__list">
                 <li class="form__item">
-                    <label class="form__label class="form__label"" for="name">Nombre:</label>
-                    <input class="form__input" type="name" valor="">
+                    <label class="form__label" for="name">Nombre:</label>
+                    <input class="form__input" type="name" placeholder="Nombre">
                 </li>
                 <li class="form__item">
                     <label class="form__label" for="name">Apellido:</label>
-                    <input class="form__input" type="surname" valor="">
+                    <input class="form__input" type="surname" placeholder="Apellido">
                 </li>
                 <li class="form__item">
                     <label class="form__label" for="name">Email:</label>
-                    <input class="form__input" type="email" valor="">
+                    <input class="form__input" type="email" placeholder="email">
                 </li>
                 <li class="form__item">
                     <label class="form__label" for="name">Contraseña:</label>
-                    <input class="form__input" type="password" valor="">
+                    <input class="form__input" type="password" placeholder="password">
                 </li>
                 <li class="form__item">
                     <label class="form__label" for="name">Repite Contraseña:</label>
-                    <input class="form__input" type="password" valor="">
+                    <input class="form__input" type="password" placeholder="password">
                 </li>
-                <button class="form__button" type="submitt" value="">Registrarse</button>
+                <button class="form__button" type="submit" value="">Registrarse</button>
                 <li class="form__checkbox">
-                    <input type="checkbox" name="TyC" valor="aceptar">
+                    <input type="checkbox" name="TyC" value="aceptar">
                     <label class="form__check" for="">Acepto</label><a class="card-item__cta" href="#">Terminos y Condiciones</a>
                 </li>
             </ul>
@@ -45,7 +59,28 @@
 </main>
 
 
-
+<!--footer-->
+<footer class="footer">
+    <!-- barra de navegacion del footer-->
+            <nav class="container navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">Shop</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="../admin/register.html">Registrarse</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="../admin/login.html">Login</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="../shop/contact.html">Contacto</a></li>
+                </ul>
+    <!-- iso del footer-->
+                <picture class="navbar__logo">
+                    <a href="../index.html">
+                        <img src="../image/branding/isotype.svg" alt="isotipo">
+                    </a>
+                </picture>
+            </nav>
+    <!-- copyrights -->
+            <p class="copyright">All rights reserved 2023 - Funkoshop <sup>&copy</sup></p> 
+            <p style="font-family: fantasy;" class="autor">by C#rist Monty </p>
+        </footer>
+    
 
 
 

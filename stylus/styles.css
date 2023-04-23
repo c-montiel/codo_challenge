@@ -1,6 +1,7 @@
 /* imported from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Raleway:wght@300;500;800&display=swap');
 
+
 /* Variables */
 :root {
     /* color pallette*/
@@ -395,21 +396,24 @@ footer .navbar__logo {
 }
 
 /* pagina de shop */
-aside {
-    display: inline-flex;
-    position: top;
-    height: 100%;
-    width: 20%;
-    padding: var(--space-16);
-    margin: auto;
+.main_shop {
+    display: flex;
+    flex-direction: row;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin: var(--space-36) var(--space-24);
+
 }
 
 .gallery {
-    display: inline-flex;
-    position: end;
-    justify-items: end;
-    align-items: end;
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin-left: 20vw;
 }
 
 /* aside */ 
@@ -505,6 +509,7 @@ aside {
 /* paginador */
 .pagination {
     display: flex;
+    margin: var(--space-24);
     padding: var(--spacing-68);
     align-items: center;
     justify-content: center;
@@ -526,4 +531,29 @@ aside {
 .pagination a:hover:not(.active) {
     background-color: var(--light-bg-solid);
     border-radius: 5px;
+}
+
+
+/* login page */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: var(--space-16);
+    margin: var(--space-24) auto;
+    gap: var(--space-24);
+}
+
+.title__login {
+    font-family: var(--secondary-font);
+    font-size: var(font-small);
+    text-transform: uppercase;
+}
+
+.form {
+    width: auto;
+    justify-content: auto;
+    align-items: center;
 }
